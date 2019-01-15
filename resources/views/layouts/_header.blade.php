@@ -1,4 +1,4 @@
-<nav class="navbar navbar-header navbar-expand-lg navbar-light">
+<nav class="navbar navbar-header navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
@@ -14,8 +14,8 @@
             </ul>
             <ul class="navbar-nav">
                 @guest
-                    <li class="nav-item"><a href="#" class="nav-link">登录</a></li>
-                    <li class="nav-item"><a href="{#" class="nav-link">注册</a></li>
+                    <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">登录</a></li>
+                    <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">注册</a></li>
                 @else
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"

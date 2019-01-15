@@ -11,4 +11,7 @@
 |
 */
 
+// 首页
 Route::get('/', 'PagesController@root')->name('root');
+// 用户
+Auth::routes();
